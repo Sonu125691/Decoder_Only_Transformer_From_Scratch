@@ -1,19 +1,19 @@
-# 🧠 Decoder-Only Transformer From Scratch (GPT-Style)
+# 🧠 Decoder-Only Transformer (GPT) From Scratch
 
-An educational implementation of a **decoder-only Transformer (GPT-style)** model built **fully from scratch using PyTorch**.  
-The model is trained on **20 classic thriller novels** to study **text generation**, **GPT architecture internals**, and the **end-to-end workflow of decoder-only Transformers**.
-
-> ⚠️ This project is created **purely for learning and educational purposes** to understand how GPT-style models work internally.
+An educational implementation of a **decoder-only Transformer (GPT)** built **fully from scratch using PyTorch**.  
+The model is trained on **20 classic thriller novels** as a practical medium to **study the internal architecture, training workflow, and inference behavior of GPT-style models**, rather than to achieve high-quality text generation.
 
 ---
 
 ## 📌 Project Objective
 
-The goal of this project is to:
-- Understand the **decoder-only Transformer (GPT) architecture**
-- Implement **self-attention, masking, multi-head attention, and feed-forward layers** from scratch
-- Learn how **language models are trained and used for text generation**
-- Explore how **tokenization, EOS handling, and sampling strategies** affect generation quality
+The primary goal of this project is to **study and understand the internal workings of the decoder-only Transformer (GPT) architecture** by implementing it fully from scratch using PyTorch.
+
+Specifically, this project focuses on:
+- Understanding the **decoder-only Transformer (GPT) architecture** at a low level
+- Implementing **self-attention, causal masking, multi-head attention, and feed-forward networks** from first principles
+- Learning the **training and inference workflow** of GPT-style language models
+- Exploring the roles of **tokenization, `<eos>` handling, and sampling strategies** in autoregressive text generation
 
 ---
 
@@ -137,30 +137,35 @@ After training, the model generates text using:
 
 ---
 
-## 📈 Results
+## 📈 Results & Observations
 
-- The model successfully learned:
-  - Sentence structure
-  - Narrative flow
-  - Thriller-style storytelling patterns
-- Generated text shows:
-  - Coherent paragraphs
-  - Context awareness
-  - Story-like progression
+After training, the model demonstrates a clear understanding of:
 
-> This project prioritizes **learning and understanding** over benchmark performance.
+- English sentence structure and grammar
+- Dialogue formatting commonly found in novels
+- Narrative-style text flow
+- Thriller and mystery tone learned from the dataset
+
+The generated text shows coherent sentence-level structure and realistic literary formatting, indicating that the model successfully learned **syntactic and stylistic patterns** from the training data.
+
+However, the model does not consistently generate fully coherent or logically connected stories over long passages. This behavior is expected due to:
+
+- Training on a relatively small dataset (20 novels)
+- Limited training steps and compute
+- Small vocabulary size and context window
+- Absence of large-scale pretraining
+
+The primary intention of this project was **not to produce high-quality storytelling**, but to **understand and implement the decoder-only Transformer (GPT) architecture from first principles**, including its training and generation workflow.
 
 ---
 
 ## 🖥️ Demo & Notebook
 
 ### 📓 Google Colab Notebook
-The full implementation (training + generation) is available here:
+The full implementation (training + generation) is available here: https://colab.research.google.com/drive/1JMZW0zqDP1iFWVM4I6sLwTYiwhHunGHS?usp=drive_link
 
 👉 **Open in Colab:**  
-`PASTE_YOUR_COLAB_LINK_HERE`
-
-> Note: Opening the link creates a **view-only copy**. You can safely explore or duplicate it to your own Drive.
+[`PASTE_YOUR_COLAB_LINK_HERE`](https://colab.research.google.com/drive/1JMZW0zqDP1iFWVM4I6sLwTYiwhHunGHS?usp=drive_link) 
 
 ---
 
@@ -168,7 +173,7 @@ The full implementation (training + generation) is available here:
 A short demo showing text generation:
 
 👉 **Watch Demo:**  
-`PASTE_YOUR_VIDEO_LINK_HERE`
+[`PASTE_YOUR_VIDEO_LINK_HERE`](https://drive.google.com/file/d/1EFmuhUZjSecsa5cRqjwiQ4nr8dkz7aOG/view?usp=drive_link)
 
 ---
 
@@ -180,22 +185,16 @@ A short demo showing text generation:
   - NumPy
   - tokenizers
   - Google Colab
-- **Hardware:** GPU (CUDA)
-
----
-
-## ⚠️ Limitations
-
-- Trained on a relatively small corpus
-- No large-scale optimization or distributed training
-- Intended for **educational exploration**, not production use
+- **Hardware:** Colab GPU (CUDA)
 
 ---
 
 ## 📚 Key Learnings
 
-- How GPT-style models work internally
-- Importance of causal masking
-- Role of tokenization and EOS tokens
-- Impact of sampling strategies on text generation
-- End-to-end Transformer training workflow
+- Deep understanding of decoder-only Transformer (GPT-style) architecture
+- Implementation of self-attention, causal masking, and multi-head attention from scratch
+- Practical role of tokenization and `<eos>` tokens in language modeling
+- How sampling strategies influence text generation behavior
+- End-to-end workflow of training and inference in GPT-style models
+- Insight into the limitations of small-scale language models trained with limited data and compute
+
