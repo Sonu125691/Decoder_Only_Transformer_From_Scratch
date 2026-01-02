@@ -162,10 +162,10 @@ The primary intention of this project was **not to produce high-quality storytel
 ## 🖥️ Demo & Notebook
 
 ### 📓 Google Colab Notebook
-The full implementation (training + generation) is available here: https://colab.research.google.com/drive/1JMZW0zqDP1iFWVM4I6sLwTYiwhHunGHS?usp=drive_link
+The full implementation (training + generation) is available here:
 
 👉 **Open in Colab:**  
-[`PASTE_YOUR_COLAB_LINK_HERE`](https://colab.research.google.com/drive/1JMZW0zqDP1iFWVM4I6sLwTYiwhHunGHS?usp=drive_link) 
+https://colab.research.google.com/drive/1JMZW0zqDP1iFWVM4I6sLwTYiwhHunGHS?usp=drive_link
 
 ---
 
@@ -173,7 +173,7 @@ The full implementation (training + generation) is available here: https://colab
 A short demo showing text generation:
 
 👉 **Watch Demo:**  
-[`PASTE_YOUR_VIDEO_LINK_HERE`](https://drive.google.com/file/d/1EFmuhUZjSecsa5cRqjwiQ4nr8dkz7aOG/view?usp=drive_link)
+https://drive.google.com/file/d/1EFmuhUZjSecsa5cRqjwiQ4nr8dkz7aOG/view?usp=drive_link
 
 ---
 
@@ -191,10 +191,9 @@ A short demo showing text generation:
 
 ## 📚 Key Learnings
 
-- Deep understanding of decoder-only Transformer (GPT-style) architecture
+- Deep understanding of decoder-only Transformer (GPT) architecture
 - Implementation of self-attention, causal masking, and multi-head attention from scratch
 - Practical role of tokenization and `<eos>` tokens in language modeling
 - How sampling strategies influence text generation behavior
 - End-to-end workflow of training and inference in GPT-style models
 - Insight into the limitations of small-scale language models trained with limited data and compute
-
